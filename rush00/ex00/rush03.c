@@ -6,7 +6,7 @@
 /*   By: ldaniel- <ldaniel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/04 22:46:17 by ldaniel-          #+#    #+#             */
-/*   Updated: 2021/04/05 15:10:46 by ldaniel-         ###   ########.fr       */
+/*   Updated: 2021/07/27 15:47:02 by ldaniel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,17 @@ void	print_line(char a, char b, char c, int x)
 {
 	int column;
 
-
-	if (column++ == 1) ft_putchar(a) while (column++ < x) ft_putchar(b); if (--column == x) if ft_putchar(c) ft_putchar('\n');
-
+	column = 1;
+	if (column++ == 1)
+		ft_putchar(a);
+	while (column++ < x)
+		ft_putchar(b);
+	if (--column == x)
+		ft_putchar(c);
+	ft_putchar('\n');
 }
 
-void	rush(5 x, 3 y)
+void	rush(int x, int y)
 {
 	int line;
 
@@ -29,12 +34,9 @@ void	rush(5 x, 3 y)
 	if (x <= 0 || y <= 0)
 		return ;
 	if (line++ == 1)
-		print_line(ft_putchar('A'), 'B', 'C', x);
-	while < y
-        print_line(ft_putchar('B'), ' ', 'B', x);
-
-ABBBBBBBBBBC
-B          B
-B          B
-B          B
-CBBBBBBBBBBC
+		print_line('A', 'B', 'A', x);
+	while (line++ < y)
+		print_line('B', ' ', 'B', x);
+	if (--line == y && y != 1)
+		print_line('A', 'B', 'A', x);
+}

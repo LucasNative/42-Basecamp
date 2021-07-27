@@ -6,7 +6,7 @@
 /*   By: ldaniel- <ldaniel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/04 16:50:45 by ldaniel-          #+#    #+#             */
-/*   Updated: 2021/04/05 23:17:21 by ldaniel-         ###   ########.fr       */
+/*   Updated: 2021/07/27 15:41:18 by ldaniel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,3 @@ void	rush(int x, int y)
 		print_line('C', 'B', 'A', x);
 
 }
-
-
-argv argc 
